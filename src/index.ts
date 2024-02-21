@@ -70,6 +70,17 @@ export function elideShorterThan(pointLists: Vec2[][], minimumPathLength: number
   return pointLists.filter((pl) => pathLength(pl) >= minimumPathLength);
 }
 
+/**
+ * Filters out paths longer than a certain length.
+ *
+ * @param pointLists List of paths to filter
+ * @param minimumPathLength Paths whose length is more than this value will be filtered out.
+ * @returns A new point list, with long paths excluded.
+ */
+export function elideLongerThan(pointLists: Vec2[][], maximumPathLength: number): Vec2[][] {
+  return pointLists.filter((pl) => pathLength(pl) <= maximumPathLength);
+}
+
 function* range(lo: number, hi: number) {
   for (let i = lo; i < hi; i++) yield i
 }

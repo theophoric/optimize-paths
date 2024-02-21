@@ -4,7 +4,7 @@
   "description": "Optimize linear paths for plotting",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/nornagon/optimize-paths",
+  "repository": "https://github.com/theophoric/optimize-paths",
   "author": "Jeremy Rose <nornagon@nornagon.net>",
   "license": "AGPL-3.0-only",
   "private": false,
