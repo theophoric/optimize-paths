@@ -10,7 +10,7 @@
   "private": false,
   "scripts": {
     "test": "jest",
-    "prepublish": "rm -rf dist && tsc"
+    "prepare": "rm -rf dist && tsc"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
